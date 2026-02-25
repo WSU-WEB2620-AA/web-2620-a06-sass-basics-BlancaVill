@@ -1,0 +1,55 @@
+/* Sass Variables */
+/* Colors */
+$body-bg: #202020; // body background/footer background
+$secondary-color: #0d6efd; // primary color for buttons and links
+$primary-color: #fff; // primary color backgrounds
+$border-color: #303030; // border color for dividers
+$balloon-color: #333; // color for balloon text
+$prime-color-font: #000000; // primary color for text on white background
+$footer-font-color: rgba(255, 255, 255, 0.4); // color for text in footer
+
+/* Typography */
+$body-font: 'Roboto Condensed', sans-serif; // font for body text
+$body-font-size: 11pt; // base font size for body text
+$sub-font-size: 0.8em; // font size for subtext
+
+/* Images */
+$btm-marg: 2em; // bottom margin for images
+
+/* Navigation Styles */
+.nav {
+    position: absolute;
+    right: 0em;
+    top: 2.2em;
+
+    ul {
+        list-style-type: none;
+
+        li {
+            float: left;
+
+            &:last-child {
+                padding-right: 0;
+            }
+        
+            a,
+            span {
+                display: block;
+                margin-left: 0.7em;
+                padding: 0.80em 1.2em;
+                letter-spacing: 0.06em;
+                text-decoration: none;
+                text-transform: uppercase;
+                font-size: 1.1em;
+                outline: 0;
+                color: $balloon-color;
+            }
+
+            &.active a {
+                background: $secondary-color;
+                border-radius: 5px;
+                color: $primary-color;
+            }
+        }
+    }
+}
